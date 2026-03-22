@@ -31,6 +31,7 @@ public class SecurityConfig {
                 .requestMatchers("/api/festivals/**").permitAll()
                 .requestMatchers("/api/notices/**").permitAll()
                 .requestMatchers("/api/posts/**").permitAll()
+                .requestMatchers("/api/quizzes/**").permitAll()
                 .anyRequest().authenticated()
             );
         return http.build();

@@ -16,9 +16,7 @@ public class Notice {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "admin_id", nullable = false)
-    private User admin;
+
 
     @Column(nullable = false, length = 200)
     private String title;

@@ -54,7 +54,7 @@ public class Product {
     private Integer groupBuyMinQty;
     private Integer groupBuyCurrentQty = 0;
 
-    @Column(precision = 3, scale = 1)
+    @Column
     private Double rating = 0.0;
 
     private Integer reviewCount = 0;
